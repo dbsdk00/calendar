@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;;
+  }
+  .calendar-container {
+    max-width: 700px; /* 달력 가로 길이 알맞게 조정 */
+    margin: 20px auto;
+    flex: 1;
+    color: #303030;
+  }
+  .calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    box-shadow: 0px 10px 15px rgb(91, 91, 91);
+  }
+  /* 달력 테두리 선 */
+  .calendar th, .calendar td {
+    padding: 10px; /* 달력 크기 */
+    border: 1.3px solid #ccc; /* 실선 테두리 */
+  }
+  /* 상단 요일 색상 */
+  .calendar th {
+    background-color: #fff;
+  }
+  /* 일요일과 토요일 배경색 변경 */
+  .calendar td:nth-child(7), /* 일요일 */
+  .calendar td:nth-child(1) { /* 토요일 */
+    background-color: #f0f0f0; /* 변경할 배경색 */
+  }
+  .calendar td {
+    height: 93px; /* 달력 높이 알맞게 조절 */
+    position: relative;
+  }
+  .select-month {
+    margin-bottom: 10px;
+  }
+  #back-to-select-month {
+    display: none;
+    margin-bottom: 10px;
+  }
+  .detail-popup {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+  }
+  .sidebar { /* 사이더 바 */
+    width:300px;
+    height: 614px; /* 사이더 바 길이 */
+    padding: 100px;
+    padding-left: 50px; /* 패딩 안 글씨 정렬 */
+    border-left: 1px solid #888888;
+    background-color: rgb(212, 212, 212);
+    color: #464646;
+  }
+  /* 달력 색상 밝게 */
+  .cell-td {
+    background-color: #fff;
+  }
+  
+
+  /* 일정이 있는 날의 배경색 변경 */
+  .has-schedule {
+    background-color: #6b9bcb !important; /* 주말이 색을 덮어서 */
+  }
+  .has-schedule:hover {
+    background-color: #477eb5 !important;
+  }
+  /* 쉬는날 배경색 변경 */
+  .has-holiday {
+    background-color: #a66c6c !important; /* 우선순위 높임 */
+  }
+  .has-holiday:hover {
+    background-color: #8a5050 !important;
+  }
+  .vacation {
+    background-color: #dbd47c;
+  }
+    /* 일요일과 토요일의 날짜 색 변경 */
+   .calendar td:nth-child(1) { /* 일요일 */
+    color: #b54747;
+   }
+    .calendar td:nth-child(7) { /* 토요일 */
+        color: #477eb5;
+    }
+
+    /* 일요일과 토요일의 글씨 색 변경 */
+   .calendar th:nth-child(1) { /* 일요일 */
+    color: #b54747;
+    
+   }
+    .calendar th:nth-child(7) { /* 토요일 */
+        color: #477eb5;
+    }
+  .sider-text {
+    color: #202020;
+    line-height: 38px; /* 사이더 자간 */
+  }
+
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid pink;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search {
+    padding: 10px;
+    position: relative;
+    background-color: #fcfcfc;
+    color: #373737;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px;
+  }
+  .search:hover {
+    background-color: #f2f2f2;
+  }
+  
+
+  /* .a {  // 목록으로 보기 첫 번째 디자인
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4c72af;
+    color: white;
+    border: none;
+    box-shadow: 3 3 10 pink;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+} */
+  .search-button {
+    width: 80px;
+    height: 205x;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  .search-button:hover {
+    background-color: #3f639d;
+  }
+
+.b {
+    padding: 7px 17px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgb(224, 224, 224);
+    color: #434343;
+    display: inline-block; /*oh*/
+    text-decoration: none;
+  }
+  .b-1 {
+    transition: all 0.3s ease;
+  }
+  .b-1:hover {
+     box-shadow:
+     -7px -7px 15px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 15px 0px #0002,
+     4px 4px 5px 0px #0001;
+  }
+
+  .manual-box {
+    padding-top: 60px;
+    padding-left: 40px;
+    height: 80px;
+    font-size: 14px;
+    color: #626262;
+    margin-top: 100px;
+    top: 40px;
+  }

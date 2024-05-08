@@ -1,0 +1,84 @@
+
+<!-- 월 없음 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2024년 학사 일정</title>
+<link rel="icon" href="덕영로고.png">
+<link rel="stylesheet" href="list.css">
+<!-- text-decoration: none; 을 사용하면 a태그를 사용했을 때 글씨에 밑줄이 안 쳐짐 -->
+</head>
+<body style="background-color: #dcdcdc;">
+
+<h1>2024년 학사 일정</h1>
+
+<div class="search-container">
+  <input type="text" id="searchInput" class="search-box" placeholder="일정을 입력하세요">
+  <button onclick="searchSchedule()" class="custom-search-btn btn-10">검색</button> 
+  <a class="a a-1" href="calendar.html">달력으로 보기</a>
+</div>
+
+<table id="scheduleTable">
+  <thead>
+    <tr>
+      <th>날짜</th>
+      <th>일정</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-03-01</td>
+      <td>학기 시작</td>
+    </tr>
+    <tr>
+      <td>2024-03-10</td>
+      <td>입학식</td>
+    </tr>
+    <tr>
+      <td>2024-04-01</td>
+      <td>춘분</td>
+    </tr>
+    <tr>
+      <td>2024-06-15</td>
+      <td>기말고사 시작</td>
+    </tr>
+    <tr>
+      <td>2024-07-01</td>
+      <td>여름방학 시작</td>
+    </tr>
+    <tr>
+      <td>2024-07-10</td>
+      <td>졸업식</td>
+    </tr>
+    <tr>
+      <td>2024-09-01</td>
+      <td>가을학기 시작</td>
+    </tr>
+    <tr>
+      <td>2024-09-15</td>
+      <td>기말고사 시작</td>
+    </tr>
+    <tr>
+      <td>2024-11-01</td>
+      <td>가을학기 종료</td>
+    </tr>
+    <tr>
+      <td>2024-12-20</td>
+      <td>겨울방학 시작</td>
+    </tr>
+    <tr>
+      <td>2024-12-24</td>
+      <td>크리스마스</td>
+    </tr>
+    <!-- 다른 일정들 추가 -->
+  </tbody>
+</table>
+
+<script src="list.js"></script>
+
+
+</body>
+</html>
+
