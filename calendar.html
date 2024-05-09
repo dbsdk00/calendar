@@ -32,18 +32,17 @@
 
 <div class="sidebar" id="sidebar">
   <h2>학사 일정</h2> 
-  <p>
-    <a class="b b-1" href="list.html">목록으로 보기</a>
-  </p>
+  
   <!-- <div>
     <a href="lightcalendar.html" style="color: white;">라이트모드</a>
   </div> <br> -->
   <input class="search" type="search" id="searchInput" placeholder="일정 검색..." onsearch="searchSchedule()">
-  
-  <button onclick="searchSchedule()" class="search-button">검색</button> 
+  <button onclick="searchSchedule()" class="search-btn">검색</button> 
+  <p>
+      <a class="list-view-btn list-view-btn-1" href="list.html">목록으로 보기</a>
+  </p>
 
   <div id="detail-container" class="sider-text"></div> <br>
-
 </div>
 
 <script src="calendar.js"></script>

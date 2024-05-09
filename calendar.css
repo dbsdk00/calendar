@@ -54,7 +54,7 @@ body {
   .sidebar { /* 사이더 바 */
     width:300px;
     height: 614px; /* 사이더 바 길이 */
-    padding: 100px;
+    padding: 130px;
     padding-left: 50px; /* 패딩 안 글씨 정렬 */
     border-left: 1px solid #888888;
     background-color: rgb(212, 212, 212);
@@ -103,23 +103,9 @@ body {
     color: #202020;
     line-height: 38px; /* 사이더 자간 */
   }
-
-  .custom-btn {
-    width: 130px;
-    height: 40px;
-    padding: 10px 25px;
-    border: 2px solid pink;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-  }
   
   .search {
-    padding: 10px;
+    padding: 10.89px;
     position: relative;
     background-color: #fcfcfc;
     color: #373737;
@@ -145,29 +131,32 @@ body {
     outline: none;
     text-decoration: none;
 } */
-  .search-button {
-    width: 80px;
-    height: 205x;
-    padding: 10px 20px;
+  .search-btn {
+    width: 70px;
+    height: 38.28px;
+    /* padding: 10px 20px; */
     border: 2px solid #000;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
-    background: transparent;
+    /* background: transparent; */ /* 배경 투명색 */
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-  }
-  .search-button:hover {
-    transition: all 0.3s ease;
-    overflow: hidden;
     background-color: #000;
     color: #fff;
   }
+  .search-btn:hover {
+    box-shadow:
+     -7px -7px 15px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 15px 0px #0002,
+     4px 4px 5px 0px #0001;
+  }
 
-.b {
+.list-view-btn {
     padding: 7px 17px;
-    border: 2px solid #000;
+    border: 2px solid #000; /* 버튼 테두리 굵기 */
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -178,23 +167,13 @@ body {
     display: inline-block; /*oh*/
     text-decoration: none;
   }
-  .b-1 {
+  .list-view-btn-1 {
     transition: all 0.3s ease;
   }
-  .b-1:hover {
+  .list-view-btn-1:hover {
      box-shadow:
      -7px -7px 15px 0px #fff9,
      -4px -4px 5px 0px #fff9,
      7px 7px 15px 0px #0002,
      4px 4px 5px 0px #0001;
-  }
-
-  .manual-box {
-    padding-top: 60px;
-    padding-left: 40px;
-    height: 80px;
-    font-size: 14px;
-    color: #626262;
-    margin-top: 100px;
-    top: 40px;
   }
