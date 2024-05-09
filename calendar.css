@@ -159,7 +159,10 @@ body {
     display: inline-block;
   }
   .search-button:hover {
-    background-color: #3f639d;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
   }
 
 .b {
