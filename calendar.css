@@ -68,17 +68,17 @@ body {
 
   /* 일정이 있는 날의 배경색 변경 */
   .has-schedule {
-    background-color: #6b9bcb !important; /* 주말이 색을 덮어서 */
+    background-color: #7690b8 !important; /* 주말이 색을 덮어서 */
   }
   .has-schedule:hover {
-    background-color: #477eb5 !important;
+    background-color: #566b8a !important;
   }
   /* 쉬는날 배경색 변경 */
   .has-holiday {
-    background-color: #a66c6c !important; /* 우선순위 높임 */
+    background-color: #b17070 !important; /* 우선순위 높임 */
   }
   .has-holiday:hover {
-    background-color: #8a5050 !important;
+    background-color: #945858 !important;
   }
   .vacation {
     background-color: #dbd47c;
